@@ -1,5 +1,6 @@
 const nodemailer = require("nodemailer");
 
+// u need to have 2 step verification on the email u are using for sending mail
 const transporter = nodemailer.createTransport({
   service: "gmail",
   host: "smtp.gmail.com",

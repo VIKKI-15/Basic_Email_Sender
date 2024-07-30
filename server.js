@@ -7,7 +7,7 @@ const transporter = nodemailer.createTransport({
   port: "587",
   secure: false,
   auth: {
-    user: "staystrong1176@gmail.com",
+    user: "yourmail@gmail.com",
     pass: "Apppassword",
     // u can get this password by following this video https://forwardemail.net/en/guides/send-mail-as-gmail-custom-domain#legacy-free-guide
   },
@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
 async function main() {
   const info = await transporter.sendMail({
     from: '"Fred Foo 👻" <vicky@gmail.com>', // sender address
-    to: "icansleepforhours@gmail.com", // list of receivers
+    to: "yourmail@gmail.com", // list of receivers
     subject: "Hello ✔", // Subject line
     text: "Hello world?", // plain text body
     html: "<b>Hello world?</b>", // html body
